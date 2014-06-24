@@ -30,11 +30,11 @@ for line in sys.stdin:
     else:
         # Hack para controlar el caso de la primera linea
         if current_word:
-            # Escritura de los datos por la salida estándar
+            # Escritura de los datos por la salida estandar
             print '%s\t%s' % (current_word, current_count)
         current_count = count
         current_word = word
 
-# ¡No hay que olvidar la ultima entrada!
+# No hay que olvidar la ultima entrada
 if current_word == word:
     print '%s\t%s' % (current_word, current_count)
